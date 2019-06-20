@@ -1,5 +1,7 @@
-Body {
-	background-image:url(bg.jpg)
+﻿Body {
+	background-image:url(bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 h1 {
@@ -8,15 +10,7 @@ h1 {
 	font-family: Futura, “Trebuchet MS”, Aria;
 }
 
-th {
-	color: #000000;
-	font-family: Futura, “Trebuchet MS”, Aria;
-	font-size:larger;
-}
 
-th:hover {
-	background-color:lightgreen;
-}
 
 p {
 	font-family: Futura, “Trebuchet MS”, Aria;
@@ -29,6 +23,76 @@ h2 {
 	font-family: Futura, “Trebuchet MS”, Aria;
 }
 
-td {
-	text-align: center;
+.heading{
+ width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; 
+}
+
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+
+
+.subnavbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.subnavbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; 
+}
+
+
+.subnavbar a:hover {
+  background-color: #000;
+}
+
+
+.subnavbar a.active {
+  background-color: #4CAF50;
+}
+@media screen and (max-width: 500px) {
+  .subnavbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
 }
